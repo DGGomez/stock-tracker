@@ -2,4 +2,12 @@
 - get email list for a stock
 - save breakout points
 - save emails
-- 
+- add router
+- update breakout points (max, min, local_max, local_min)
+- remove from email list
+- add better header
+- pages: 
+    - sign up page
+    - sign in page
+    - check your stocks list
+    - add stocks
