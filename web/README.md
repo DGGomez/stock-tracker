@@ -1,5 +1,8 @@
 ### stock tracker
 
+description: lets users track stocks and gives warnings when stock is rising too quickly or falling too quickly.
+will also make predictions of stock direction based on previous trends.
+
 ## back end
 - check for updates ( from api???? )
 - add watchers
@@ -21,3 +24,6 @@
 - store
 - router
 - testing
+
+## AI
+- learn AI
