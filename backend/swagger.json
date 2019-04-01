@@ -1,0 +1,103 @@
+{
+    "swagger": "2.0",
+    "info": {
+      "version": "1.0.0",
+      "title": "API stuff",
+      "description": "Stuff API",
+      "license": {
+        "name": "MIT",
+        "url": "https://opensource.org/licenses/MIT"
+      }
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "consumes": [
+      "application/json"
+    ],
+    "produces": [
+      "application/json"
+    ],
+    "paths": {
+      "/create": {
+        "post": {
+          "description": "Create new item",
+          "parameters": [
+            {
+              "name": "items",
+              "in": "body",
+              "description": "items",
+              "required": true,
+              "schema": {
+              "$ref": "#/definitions/Item"
+          }            
+          }
+          ],
+          "produces": [
+            "application/json"
+          ],
+          "responses": {
+            "200": {
+              "description": "New user is created",
+              "schema": {
+                "$ref": "#/definitions/Item"
+              }
+            }
+          }
+        }
+      },
+      "/read": {
+        "post": {
+          "summary": "Get item with given ID",
+          "parameters": [
+            {
+              "name": "items",
+              "in": "body",
+              "description": "items",
+              "required": true,
+              "schema": {
+              "$ref": "#/definitions/Itemread"
+          }            
+          }
+          ],
+          "responses": {
+            "200": {
+              "description": "Item is found",
+              "schema": {
+                "$ref": "#/definitions/Item"
+              }
+            }
+          }
+        }
+      }
+    },
+    "definitions": {
+      "Item": {
+        "properties": {
+          "name": {
+            "type": "string",
+            "uniqueItems": true
+          },
+          "location": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "price": {
+            "type": "string"
+          }
+        }
+      },
+      "Itemread": {
+        "properties": {
+          "location": {
+            "type": "string"
+          }
+        }
+      },
+      "Items": {
+        "type": "array",
+        "$ref": "#/definitions/Item"
+      }
+    }
+  }
