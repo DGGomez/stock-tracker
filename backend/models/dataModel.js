@@ -6,13 +6,10 @@ var DataSchema = new Schema({
   name: {
     type: String
   },
-  location: {
+  ticker: {
     type: String
   },
   description: {
-    type: String
-  },
-  price: {
     type: String
   },
   created: { 
