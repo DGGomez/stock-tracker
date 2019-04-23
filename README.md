@@ -27,3 +27,7 @@ will also make predictions of stock direction based on previous trends.
 
 ## AI
 - learn AI
+- what is a good pick
+- what is a bad pick
+- what to buy
+- what to sell
